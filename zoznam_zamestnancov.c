@@ -93,6 +93,7 @@ void EMPLOYEE_CLONE(TOFFICE *office, TOFFICE *new_office) {
     head_employee->m_Next = NULL;
     new_office->m_Emp = head_employee;
     head_employee->m_Car=NULL;
+    
     //If office-m_Emp is not null then there  has  to be already a car 
     if(office->m_Emp->m_Car)
       head_employee->m_Car=REFERENCE_SEARCHER(office,office->m_Emp->m_Car,new_office);
